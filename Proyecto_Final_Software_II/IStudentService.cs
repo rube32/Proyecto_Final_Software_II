@@ -9,22 +9,22 @@ public interface IStudentService
     void AddStudent(Estudiante student);
 
     [OperationContract]
-    void UpdateStudent(Student student);
+    void UpdateStudent(Estudiante student);
 
     [OperationContract]
     void DeleteStudent(int studentId);
 
     [OperationContract]
-    List<Student> GetAllStudents();
+    List<Estudiante> GetAllStudents();
 
     [OperationContract]
-    Student GetStudentById(int studentId);
+    Estudiante GetStudentById(int studentId);
 
     [OperationContract]
-    void AddPayment(int studentId, Payment payment);
+    void AddPayment(int studentId, Pago payment);
 
     [OperationContract]
-    List<Payment> GetPaymentsByStudentId(int studentId);
+    List<Pago> GetPaymentsByStudentId(int studentId);
 }
 
 public class Estudiante
@@ -32,7 +32,7 @@ public class Estudiante
 }
 
 [DataContract]
-public class Student
+public class Estudiante
 {
     [DataMember]
     public int IdEstudiante { get; set; }
@@ -51,7 +51,7 @@ public class Student
 }
 
 [DataContract]
-public class Payment
+public class Pago
 {
     [DataMember]
     public int IdPago { get; set; }
