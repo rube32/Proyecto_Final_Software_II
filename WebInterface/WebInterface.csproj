@@ -70,6 +70,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contratos\Proceso_Pago.cs" />
+    <Compile Include="Contratos\Servicio_pago.cs" />
     <Compile Include="Estudiante.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
