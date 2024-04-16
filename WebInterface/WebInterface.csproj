@@ -72,6 +72,8 @@
   <ItemGroup>
     <Compile Include="Contratos\Proceso_Pago.cs" />
     <Compile Include="Contratos\Servicio_pago.cs" />
+    <Compile Include="Controles\EstudianteControl.cs" />
+    <Compile Include="Controles\PagoControl.cs" />
     <Compile Include="Estudiante.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
